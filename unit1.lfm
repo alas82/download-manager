@@ -1,0 +1,101 @@
+object Form1: TForm1
+  Left = 257
+  Height = 120
+  Top = 250
+  Width = 784
+  Caption = 'Download manager'
+  ClientHeight = 120
+  ClientWidth = 784
+  object Button1: TButton
+    Left = 7
+    Height = 25
+    Top = 80
+    Width = 163
+    Caption = 'download with wget'
+    Enabled = False
+    OnClick = Button1Click
+    TabOrder = 0
+  end
+  object Button2: TButton
+    Left = 311
+    Height = 25
+    Top = 80
+    Width = 163
+    Caption = 'download with curl'
+    Enabled = False
+    OnClick = Button2Click
+    TabOrder = 1
+  end
+  object Button3: TButton
+    Left = 612
+    Height = 25
+    Top = 80
+    Width = 163
+    Caption = 'download with Urlmon'
+    Enabled = False
+    OnClick = Button3Click
+    TabOrder = 2
+  end
+  object Edit1: TEdit
+    Left = 63
+    Height = 23
+    Top = 16
+    Width = 712
+    TabOrder = 3
+    Text = 'https://server8.mp3quran.net/ahmad_huth/018.mp3 '
+    TextHint = 'Insert file link'
+  end
+  object Edit2: TEdit
+    Left = 63
+    Height = 23
+    Top = 48
+    Width = 680
+    TabOrder = 4
+    TextHint = 'Insert File Name'
+  end
+  object Label1: TLabel
+    Left = 7
+    Height = 15
+    Top = 24
+    Width = 46
+    Caption = 'File Link:'
+    ParentColor = False
+  end
+  object Label2: TLabel
+    Left = 7
+    Height = 15
+    Top = 56
+    Width = 52
+    Caption = 'Saving to:'
+    ParentColor = False
+  end
+  object Button5: TButton
+    Left = 751
+    Height = 22
+    Top = 48
+    Width = 24
+    Caption = '....'
+    OnClick = Button5Click
+    TabOrder = 5
+  end
+  object Process1: TProcess
+    Active = False
+    Options = []
+    Priority = ppNormal
+    StartupOptions = []
+    ShowWindow = swoNone
+    WindowColumns = 0
+    WindowHeight = 0
+    WindowLeft = 0
+    WindowRows = 0
+    WindowTop = 0
+    WindowWidth = 0
+    FillAttribute = 0
+    left = 216
+    top = 72
+  end
+  object SaveDialog1: TSaveDialog
+    left = 520
+    top = 72
+  end
+end
